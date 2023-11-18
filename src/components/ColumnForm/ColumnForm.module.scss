@@ -1,0 +1,12 @@
+.columnForm {
+    display: flex;
+    flex-wrap: wrap;
+
+    // flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    
+    label {
+        padding: 15px 10px;
+    }
+}
