@@ -21,7 +21,7 @@ const ColumnForm = (props) => {
         <TextInput
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder='Add new column...'
+          placeholder='Add new title...'
         />
       </div>
       <div>
@@ -29,7 +29,7 @@ const ColumnForm = (props) => {
         <TextInput
           value={icon}
           onChange={(e) => setIcon(e.target.value)}
-          placeholder='Add new column...'
+          placeholder='Add new icon...'
         />
       </div>
       <Button>Add column</Button>
