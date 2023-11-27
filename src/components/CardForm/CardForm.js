@@ -4,9 +4,8 @@ import Button from '../Button/Button';
 import TextInput from '../TextInput/TextInput';
 import { useDispatch } from 'react-redux';
 
-const CardForm = (props) => {
+const CardForm = ({ columnId }) => {
   const [title, setTitle] = useState('');
-  const [columnId] = useState(props.columnId);
 
   const dispatch = useDispatch();
 
