@@ -46,6 +46,11 @@ const reducer = (state, action) => {
       };
     case 'UPDATE_SEARCHSTRING':
       return { ...state, searchString: action.payload };
+    case 'ADD_LIST':
+      return {
+        ...state,
+        lists: [...state.lists, { ...action.payload, id: shortid() }],
+      };
     default:
       return state;
   }
