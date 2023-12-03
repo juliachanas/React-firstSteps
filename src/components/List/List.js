@@ -5,7 +5,7 @@ import ColumnForm from '../ColumnForm/ColumnForm';
 import { getListById, getColumnsByList } from '../../redux/store';
 import { useParams } from 'react-router';
 
-const List = () => {
+const List = (props) => {
   const { listId } = useParams();
   const allColumns = useSelector((columns) =>
     getColumnsByList(columns, listId)
@@ -25,7 +25,7 @@ const List = () => {
           <Column key={column.id} {...column} />
         ))}
       </div>
-      <ColumnForm />
+      <ColumnForm listId={listId} />
     </div>
   );
 };
