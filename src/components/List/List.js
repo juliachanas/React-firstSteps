@@ -12,7 +12,7 @@ const List = (props) => {
   const allColumns = useSelector((columns) =>
     getColumnsByList(columns, listId)
   );
-  console.log(allColumns);
+  // console.log(allColumns);
   // const listData = useSelector(getListById);
   const listData = useSelector((lists) => getListById(lists, listId));
 
