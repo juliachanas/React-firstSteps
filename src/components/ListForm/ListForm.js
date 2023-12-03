@@ -20,7 +20,7 @@ const ListForm = () => {
   };
 
   return (
-    <form className={styles.columnForm} onSubmit={handleSubmit}>
+    <form className={styles.listForm} onSubmit={handleSubmit}>
       <div>
         <label>Title: </label>
         <TextInput
