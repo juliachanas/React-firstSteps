@@ -1,15 +1,15 @@
 @import '../../styles/settings.scss';
 
-.hero {
-  padding: $base-size;
-}
+// .hero {
+//   padding: $base-size;
+// }
 
-.title {
-  padding: ($base-size * 3) 0;
-  text-align: center;
-  font-size: ($base-size * 3);
-  text-transform: uppercase;
-}
+// .title {
+//   padding: ($base-size * 3) 0;
+//   text-align: center;
+//   font-size: ($base-size * 3);
+//   text-transform: uppercase;
+// }
 
 .subtitle {
   padding: ($base-size * 2) 0;
@@ -19,6 +19,10 @@
   font-weight: normal;
 }
 
-.title + .subtitle {
+// .title + .subtitle {
+//   margin-top: (- $base-size * 3);
+// }
+
+.subtitle {
   margin-top: (- $base-size * 3);
 }
