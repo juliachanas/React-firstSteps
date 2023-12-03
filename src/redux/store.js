@@ -12,6 +12,14 @@ export const getFilteredCards = ({ cards, searchString }, columnId) =>
 
 export const getAllColumns = ({ columns }) => columns;
 
+export const getListById = ({ lists }, listId) =>
+  lists.find((list) => list.id === listId);
+
+export const getColumnsByList = ({ columns }, listId) =>
+  columns.filter((column) => column.listId === listId);
+
+export const getAllLists = ({ lists }) => lists;
+
 // action creators
 export const addColumn = (payload) => ({ type: 'ADD_COLUMN', payload });
 
