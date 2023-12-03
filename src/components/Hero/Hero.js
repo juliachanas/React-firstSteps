@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div>
       <div>
-        <PageTitle>FAVORITE</PageTitle>
+        <PageTitle>MY FIRST REACT APP</PageTitle>
       </div>
       <p className={styles.subtitle}>
         A simple to-do app, with lists, columns and card
