@@ -11,18 +11,20 @@ const Favorite = () => {
   return (
     <div>
       <PageTitle>FAVORITE</PageTitle>
-      <div className={styles.favorites}>
-        <ul className={styles.cards}>
-          {favoritedCards.map((card) => (
-            <Card
-              key={card.id}
-              className={styles.cards}
-              cardId={card.id}
-              title={card.title}
-              isFavorite={card.isFavorite}
-            />
-          ))}
-        </ul>
+      <div className={styles.diva}>
+        <div className={styles.favorites}>
+          <ul className={styles.cards}>
+            {favoritedCards.map((card) => (
+              <Card
+                key={card.id}
+                className={styles.cards}
+                cardId={card.id}
+                title={card.title}
+                isFavorite={card.isFavorite}
+              />
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

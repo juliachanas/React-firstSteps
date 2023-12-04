@@ -2,12 +2,12 @@
 @import '../../styles/settings.scss';
 
 
+.diva {
+    display: flex;
+    justify-content: center;
+
+}
 .favorites {
-    // margin: 0 auto; // Ustawia marginesy poziome na auto
-    // display: flex;
-    // justify-content: center; // Centruje wzdłuż osi poziomej
-    // align-items: center;
-    flex-shrink: 0;
     width: calc(33% - 12px);
     background: $color-light;
     margin: 0 $base-size $base-size 0;
