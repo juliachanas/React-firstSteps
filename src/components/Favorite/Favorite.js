@@ -3,11 +3,16 @@ import PageTitle from '../PageTitle/PageTitle';
 import { useSelector } from 'react-redux';
 import { getFavoriteCards } from '../../redux/store';
 import Card from '../Card/Card';
+import { Navigate } from 'react-router-dom';
 
 const Favorite = () => {
   const favoritedCards = useSelector(getFavoriteCards);
   console.log(favoritedCards);
 
+  if (!favoritedCards || favoritedCards.length === 0)
+    return <Navigate to='/' />;
+
+  console.log('favoritedCards', favoritedCards);
   return (
     <div>
       <PageTitle>FAVORITE</PageTitle>
